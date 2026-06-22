@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article Detail | KINGS 24×7</title>
+  <meta name="description" content="Read full article details on KINGS 24×7.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./style.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  
+  <!-- Visually hidden H1 for SEO -->
+  <h1 class="sr-only">KINGS 24×7 Digital News Media Portal - Article Details</h1>
+
+  <!-- SITE HEADER — Sticky 3-Row Structure -->
+  <header class="site-header" id="main-navbar">
+
+    <!-- ROW 1: Top Bar -->
+    <div class="top-bar">
+      <div class="top-bar-inner">
+
+        <!-- Brand Logo — Far Left -->
+        <a href="/" class="brand-logo" id="nav-logo">
+          <span class="logo-kings">KINGS</span>
+          <span class="logo-badge">24<span class="logo-cross">×</span>7</span>
+        </a>
+
+        <!-- Right-Side Actions — Far Right -->
+        <div class="header-actions">
+
+          <!-- Login / Create Account -->
+          <button class="btn-outlined user-profile-btn" id="login-btn" aria-label="User Account" title="Login / Create Account">
+            <i data-lucide="user"></i>
+            <span class="login-text">Login / Create Account</span>
+          </button>
+
+          <!-- Notification Bell -->
+          <button class="action-btn notification-bell-btn" id="notification-btn" aria-label="Notifications" title="Notifications">
+            <i data-lucide="bell"></i>
+            <span class="notification-dot"></span>
+          </button>
+
+          <!-- Subscribe — Extreme Right -->
+          <button class="nav-subscribe-btn" id="nav-subscribe-btn" aria-label="Subscribe Premium">
+            <i data-lucide="crown"></i>
+            <span>SUBSCRIBE</span>
+          </button>
+
+          <!-- Mobile Hamburger (hidden on desktop) -->
+          <button class="action-btn mobile-menu-toggle" id="menu-toggle-btn" aria-label="Toggle Menu">
+            <i data-lucide="menu"></i>
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ROW 2: Breaking News Ticker -->
+    <div class="breaking-news-bar" id="breaking-news-section">
+      <div class="ticker-label">
+        <i data-lucide="radio" class="pulse-icon"></i>
+        <span>BREAKING NEWS</span>
+      </div>
+      <div class="ticker-content-wrapper">
+        <div class="ticker-content" id="ticker-text">
+          <span>Chennai Metro Phase 2 Expansion Approved: The project will cover 118.9 km across the city</span>
+          <span class="ticker-bullet">•</span>
+          <span>India Wins Historic Gold in Asian Games Athletics: Clean sweep in 4x400m relay event</span>
+          <span class="ticker-bullet">•</span>
+          <span>New Education Policy Implementation Update: Core subjects to get structural revisions from next term</span>
+          <span class="ticker-bullet">•</span>
+          <span>Tamil Nadu Rains Update: Heavy downpour expected in coastal districts, alert issued for Chennai</span>
+          <span class="ticker-bullet">•</span>
+          <span>Sensex Rises 600 Points as Market Closes Green: Tech and banking shares lead the rally</span>
+        </div>
+      </div>
+      <a href="#" class="view-all-breaking-link" id="view-all-breaking-btn">
+        <span>View All Breaking News</span>
+        <i data-lucide="arrow-right"></i>
+      </a>
+      <button class="ticker-search-btn" id="search-trigger-btn" aria-label="Search News" title="Search News">
+        <i data-lucide="search"></i>
+      </button>
+    </div>
+
+    <!-- ROW 3: Main Navigation Bar -->
+    <nav class="main-nav-bar" id="desktop-nav">
+      <div class="main-nav-inner">
+        <ul class="main-nav-list">
+          <li><a href="/" class="nav-link" id="nav-home">Home</a></li>
+          <li class="dropdown-item">
+            <a href="#" class="nav-link dropdown-toggle" id="nav-agencypro">Agencypro</a>
+          </li>
+          <li class="dropdown-item">
+            <a href="#" class="nav-link dropdown-toggle" id="nav-casestudies">Case Studies</a>
+          </li>
+          <li class="dropdown-item">
+            <a href="#" class="nav-link dropdown-toggle" id="nav-events">Events <i data-lucide="chevron-down"></i></a>
+            <ul class="dropdown-menu-list">
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="#">Roundtable</a></li>
+              <li><a href="#">Webinar</a></li>
+              <li><a href="#">Kings 24*7 League Members</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-item">
+            <a href="#" class="nav-link dropdown-toggle" id="nav-news">News <i data-lucide="chevron-down"></i></a>
+            <ul class="dropdown-menu-list">
+              <li><a href="#">Advertising</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Brands and Content</a></li>
+              <li><a href="#">People Spotting</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-item">
+            <a href="#" class="nav-link dropdown-toggle" id="nav-articles">Articles <i data-lucide="chevron-down"></i></a>
+            <ul class="dropdown-menu-list">
+              <li><a href="#">Industry Briefs</a></li>
+              <li><a href="#">Interviews</a></li>
+              <li><a href="#">Kings 24*7 Pause</a></li>
+              <li><a href="#">Guest Articles</a></li>
+              <li><a href="#">Marketing Initiative</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-item">
+            <a href="#" class="nav-link dropdown-toggle" id="nav-media">Media <i data-lucide="chevron-down"></i></a>
+            <ul class="dropdown-menu-list">
+              <li><a href="#">Television</a></li>
+              <li><a href="#">Digital</a></li>
+              <li><a href="#">OTT Streaming</a></li>
+              <li><a href="#">Social Media</a></li>
+              <li><a href="#">Print</a></li>
+              <li><a href="#">OOH</a></li>
+              <li><a href="#">Radio</a></li>
+              <li><a href="#">Cinema</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-item">
+            <a href="#" class="nav-link dropdown-toggle" id="nav-more">More <i data-lucide="chevron-down"></i></a>
+            <ul class="dropdown-menu-list">
+              <li><a href="#">The Sreekant Interview</a></li>
+              <li><a href="#">Creative Showcase</a></li>
+              <li><a href="#">Authors</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ROW 4: Live Updates Strip -->
+    <div class="live-updates-bar" id="live-updates-section">
+      <div class="live-label">
+        <span class="live-indicator-dot"></span>
+        <span>LIVE NOW</span>
+      </div>
+      <div class="live-ticker-wrapper">
+        <div class="live-ticker-content" id="live-ticker-text">
+          <a href="#" class="live-update-link" data-article-id="live-1">Tamil Nadu Assembly Updates</a>
+          <span class="live-bullet">•</span>
+          <a href="#" class="live-update-link" data-article-id="live-2">CSK vs RCB Highlights</a>
+          <span class="live-bullet">•</span>
+          <a href="#" class="live-update-link" data-article-id="live-3">Gold Price Today</a>
+          <span class="live-bullet">•</span>
+          <a href="#" class="live-update-link" data-article-id="live-4">Weather Alerts</a>
+          <span class="live-bullet">•</span>
+          <a href="#" class="live-update-link" data-article-id="live-5">Election Results</a>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-nav-drawer">
+    <div class="drawer-header">
+      <a href="/" class="brand-logo">
+        <span class="logo-kings">KINGS</span>
+        <span class="logo-badge">24<span class="logo-cross">×</span>7</span>
+      </a>
+      <button class="action-btn" id="drawer-close-btn" aria-label="Close Menu">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+    <div class="drawer-ctas">
+      <button class="nav-subscribe-btn" id="drawer-subscribe-btn">
+        <i data-lucide="crown"></i>
+        <span>SUBSCRIBE PREMIUM</span>
+      </button>
+      <button class="btn-outlined user-profile-btn" id="drawer-login-btn">
+        <i data-lucide="user"></i>
+        <span class="drawer-login-text">Login / Create Account</span>
+      </button>
+    </div>
+    <nav class="drawer-nav">
+      <ul>
+        <li><a href="/" class="drawer-link">Home</a></li>
+        <li><a href="#" class="drawer-link">Agencypro</a></li>
+        <li><a href="#" class="drawer-link">Case Studies</a></li>
+        <li class="drawer-dropdown-item">
+          <button class="drawer-link drawer-dropdown-toggle">Events <i data-lucide="chevron-down"></i></button>
+          <ul class="drawer-submenu">
+            <li><a href="#" class="drawer-sublink">Dashboard</a></li>
+            <li><a href="#" class="drawer-sublink">Roundtable</a></li>
+            <li><a href="#" class="drawer-sublink">Webinar</a></li>
+            <li><a href="#" class="drawer-sublink">Kings 24*7 League Members</a></li>
+          </ul>
+        </li>
+        <li class="drawer-dropdown-item">
+          <button class="drawer-link drawer-dropdown-toggle">News <i data-lucide="chevron-down"></i></button>
+          <ul class="drawer-submenu">
+            <li><a href="#" class="drawer-sublink">Advertising</a></li>
+            <li><a href="#" class="drawer-sublink">Marketing</a></li>
+            <li><a href="#" class="drawer-sublink">Brands and Content</a></li>
+            <li><a href="#" class="drawer-sublink">People Spotting</a></li>
+          </ul>
+        </li>
+        <li class="drawer-dropdown-item">
+          <button class="drawer-link drawer-dropdown-toggle">Articles <i data-lucide="chevron-down"></i></button>
+          <ul class="drawer-submenu">
+            <li><a href="#" class="drawer-sublink">Industry Briefs</a></li>
+            <li><a href="#" class="drawer-sublink">Interviews</a></li>
+            <li><a href="#" class="drawer-sublink">Kings 24*7 Pause</a></li>
+            <li><a href="#" class="drawer-sublink">Guest Articles</a></li>
+            <li><a href="#" class="drawer-sublink">Marketing Initiative</a></li>
+          </ul>
+        </li>
+        <li class="drawer-dropdown-item">
+          <button class="drawer-link drawer-dropdown-toggle">Media <i data-lucide="chevron-down"></i></button>
+          <ul class="drawer-submenu">
+            <li><a href="#" class="drawer-sublink">Television</a></li>
+            <li><a href="#" class="drawer-sublink">Digital</a></li>
+            <li><a href="#" class="drawer-sublink">OTT Streaming</a></li>
+            <li><a href="#" class="drawer-sublink">Social Media</a></li>
+            <li><a href="#" class="drawer-sublink">Print</a></li>
+            <li><a href="#" class="drawer-sublink">OOH</a></li>
+            <li><a href="#" class="drawer-sublink">Radio</a></li>
+            <li><a href="#" class="drawer-sublink">Cinema</a></li>
+          </ul>
+        </li>
+        <li class="drawer-dropdown-item">
+          <button class="drawer-link drawer-dropdown-toggle">More <i data-lucide="chevron-down"></i></button>
+          <ul class="drawer-submenu">
+            <li><a href="#" class="drawer-sublink">The Sreekant Interview</a></li>
+            <li><a href="#" class="drawer-sublink">Creative Showcase</a></li>
+            <li><a href="#" class="drawer-sublink">Authors</a></li>
+            <li><a href="#" class="drawer-sublink">Contact Us</a></li>
+            <li><a href="#" class="drawer-sublink">About Us</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="drawer-overlay" id="mobile-drawer-overlay"></div>
+
+  <!-- Search Modal Overlay -->
+  <div class="search-modal" id="search-overlay">
+    <div class="search-modal-container">
+      <div class="search-input-wrapper">
+        <i data-lucide="search" class="search-modal-icon"></i>
+        <input type="text" placeholder="Search for news, videos, topics..." id="search-input" autofocus>
+        <button class="search-close-btn" id="search-close-btn"><i data-lucide="x"></i></button>
+      </div>
+      <div class="search-results-preview" id="search-preview">
+        <h4>Trending Searches</h4>
+        <ul>
+          <li><a href="#"><i data-lucide="trending-up"></i> Chennai Metro Route Map</a></li>
+          <li><a href="#"><i data-lucide="trending-up"></i> Tamil Nadu Gold Rate Today</a></li>
+          <li><a href="#"><i data-lucide="trending-up"></i> CSK vs RCB Scorecard</a></li>
+          <li><a href="#"><i data-lucide="trending-up"></i> Upcoming Movies Tamil</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Modal Overlay -->
+  <div class="login-modal" id="login-overlay">
+    <div class="login-modal-container">
+      <button class="modal-close-btn" id="login-close-btn"><i data-lucide="x"></i></button>
+      <div class="login-box">
+        <div class="login-header">
+          <span class="logo-kings">KINGS</span>
+          <span class="logo-badge">24<span class="logo-cross">×</span>7</span>
+          <h3>Welcome Back</h3>
+          <p>Sign in to customize your news feed and save articles.</p>
+        </div>
+        <form class="login-form" id="auth-form" onsubmit="event.preventDefault();">
+          <div class="form-group">
+            <label for="login-email">Email Address</label>
+            <input type="email" id="login-email" placeholder="name@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" placeholder="••••••••" required>
+          </div>
+          <div class="form-options">
+            <label class="remember-me">
+              <input type="checkbox"> Remember me
+            </label>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+          </div>
+          <button type="submit" class="btn-primary" id="btn-signin">Sign In</button>
+        </form>
+        <div class="login-footer">
+          <p>Don't have an account? <a href="#" id="toggle-signup">Create Account</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notifications Drawer -->
+  <div class="notifications-drawer" id="notifications-drawer">
+    <div class="drawer-header">
+      <h3>Notifications</h3>
+      <button class="action-btn" id="notifications-close-btn"><i data-lucide="x"></i></button>
+    </div>
+    <div class="notifications-list">
+      <div class="notification-item unread">
+        <div class="noti-indicator"></div>
+        <div class="noti-content">
+          <p class="noti-text"><strong>BREAKING:</strong> Heavy rain alert issued for Chennai and adjacent districts for next 24 hours.</p>
+          <span class="noti-time">5 mins ago</span>
+        </div>
+      </div>
+      <div class="notification-item unread">
+        <div class="noti-indicator"></div>
+        <div class="noti-content">
+          <p class="noti-text"><strong>Sports:</strong> India clinches a thrilling last-ball win against Pakistan in the Asia Cup.</p>
+          <span class="noti-time">2 hours ago</span>
+        </div>
+      </div>
+      <div class="notification-item">
+        <div class="noti-content">
+          <p class="noti-text"><strong>Cinema:</strong> Thalapathy Vijay's next movie official title to be revealed tonight at 8 PM.</p>
+          <span class="noti-time">5 hours ago</span>
+        </div>
+      </div>
+    </div>
+    <div class="notifications-footer">
+      <a href="#" class="view-all-notifications">Mark all as read</a>
+    </div>
+  </div>
+  <div class="notifications-overlay" id="notifications-overlay"></div>
+
+  <!-- Main Content Wrapper -->
+  <main class="main-content">
+    
+    <!-- Dedicated Full Page Article Details -->
+    <article class="article-detail-container" id="article-detail-view">
+      <div class="article-detail-header">
+        <div class="article-detail-badge-row">
+          <span class="article-category-badge" id="article-detail-category">Politics</span>
+        </div>
+        <h1 class="article-detail-headline" id="article-detail-title">Loading Article...</h1>
+        
+        <div class="article-detail-meta-row">
+          <div class="article-detail-author-info">
+            <span class="author-label">By</span> <strong id="article-detail-author">Author Name</strong>
+          </div>
+          <div class="article-detail-time-info">
+            <span><i data-lucide="clock"></i> <span id="article-detail-read-time">3 min read</span></span>
+            <span class="meta-dot"></span>
+            <span>Published: <span id="article-detail-published">Time</span></span>
+            <span class="meta-dot"></span>
+            <span>Updated: <span id="article-detail-updated">Time</span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-detail-featured-image" id="article-detail-image-wrapper">
+        <img src="" alt="Featured image" id="article-detail-image">
+      </div>
+
+      <div class="article-detail-share-row">
+        <span>Share Article:</span>
+        <div class="share-buttons-group">
+          <a href="#" class="share-btn whatsapp" id="share-whatsapp" title="Share on WhatsApp"><i data-lucide="message-circle"></i> WhatsApp</a>
+          <a href="#" class="share-btn facebook" id="share-facebook" title="Share on Facebook"><i data-lucide="facebook"></i> Facebook</a>
+          <a href="#" class="share-btn twitter" id="share-twitter" title="Share on X (Twitter)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 11.62h-3.733z"/><path d="M20 20L8.267 8.38h3.733z"/><path d="M4 20L20 4"/></svg> X
+          </a>
+          <a href="#" class="share-btn telegram" id="share-telegram" title="Share on Telegram"><i data-lucide="send"></i> Telegram</a>
+          <a href="#" class="share-btn copy-link" id="share-copy" title="Copy Link"><i data-lucide="copy"></i> Copy Link</a>
+        </div>
+      </div>
+
+      <div class="article-detail-body-text" id="article-detail-body">
+        <p>Loading full article content...</p>
+      </div>
+
+      <div class="article-detail-back-home">
+        <a href="/" class="btn-outlined"><i data-lucide="arrow-left"></i> Back to Homepage</a>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- Premium Dark Footer -->
+  <footer class="footer-container" id="site-footer">
+    <div class="footer-wrapper">
+      
+      <!-- Logo and Description Column -->
+      <div class="footer-column footer-about">
+        <a href="/" class="brand-logo footer-logo">
+          <span class="logo-kings">KINGS</span>
+          <span class="logo-badge">24<span class="logo-cross">×</span>7</span>
+        </a>
+        <p class="footer-desc">Kings 24×7 is your trusted source for breaking news, live updates, and detailed analysis from Tamil Nadu, India, and across the globe. Stay informed with our dedicated round-the-clock news coverage.</p>
+      </div>
+
+      <!-- Quick Links Column -->
+      <div class="footer-column">
+        <h4>QUICK LINKS</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#">Agencypro</a></li>
+          <li><a href="#">Case Studies</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Articles</a></li>
+          <li><a href="#">Media</a></li>
+          <li><a href="#">More</a></li>
+        </ul>
+      </div>
+
+      <!-- Categories Column -->
+      <div class="footer-column">
+        <h4>CATEGORIES</h4>
+        <div class="footer-categories-grid">
+          <ul>
+            <li><a href="#">Politics</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Cinema</a></li>
+            <li><a href="#">Technology</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">World</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Local News</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Social and App Links Column -->
+      <div class="footer-column footer-connect">
+        <h4>FOLLOW US</h4>
+        <div class="footer-social-icons">
+          <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+          <a href="#" aria-label="Twitter X">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="x-logo-svg"><path d="M4 4l11.733 11.62h-3.733z"/><path d="M20 20L8.267 8.38h3.733z"/><path d="M4 20L20 4"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+          <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+        </div>
+        
+        <h4>DOWNLOAD APP</h4>
+        <div class="app-download-buttons">
+          <a href="#" class="app-btn store-play" id="playstore-link" title="Download on Google Play">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play Store">
+          </a>
+          <a href="#" class="app-btn store-apple" id="appstore-link" title="Download on App Store">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store">
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Sub Footer Copyright -->
+    <div class="footer-bottom">
+      <p>&copy; 2026 Kings 24×7. All Rights Reserved. Designed with excellence.</p>
+    </div>
+  </footer>
+
+  <!-- Immersive Full-Screen Video Player -->
+  <div class="video-player-modal" id="immersive-player">
+    <div class="player-container">
+      <video id="player-video" src="" preload="metadata" playsinline></video>
+      <div class="player-controls-overlay" id="player-controls-overlay">
+        <div class="player-top-bar">
+          <div class="player-title-info">
+            <span class="logo-kings">KINGS</span>
+            <span class="logo-badge">24<span class="logo-cross">×</span>7</span>
+            <span class="player-video-title" id="player-video-title">Video Title</span>
+          </div>
+          <button class="player-close-btn" id="player-close-btn" aria-label="Exit Player">
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+        <div class="player-middle-action" id="player-middle-action">
+          <i data-lucide="play" id="player-middle-icon"></i>
+        </div>
+        <div class="player-bottom-bar">
+          <div class="progress-container" id="player-progress-container">
+            <div class="progress-track">
+              <div class="progress-buffered" id="player-progress-buffered"></div>
+              <div class="progress-play" id="player-progress-play"></div>
+              <div class="progress-handle" id="player-progress-handle"></div>
+            </div>
+          </div>
+          <div class="player-actions-row">
+            <div class="actions-left">
+              <button class="control-btn" id="player-play-btn" aria-label="Play">
+                <i data-lucide="play" id="player-play-icon"></i>
+              </button>
+              <button class="control-btn" id="player-rewind-btn" aria-label="Rewind 10 seconds" title="-10s">
+                <i data-lucide="rotate-ccw"></i>
+              </button>
+              <button class="control-btn" id="player-forward-btn" aria-label="Forward 10 seconds" title="+10s">
+                <i data-lucide="rotate-cw"></i>
+              </button>
+              <div class="volume-container">
+                <button class="control-btn" id="player-volume-btn" aria-label="Mute">
+                  <i data-lucide="volume-2" id="player-volume-icon"></i>
+                </button>
+                <input type="range" class="volume-slider" id="player-volume-slider" min="0" max="1" step="0.05" value="1">
+              </div>
+              <span class="time-display">
+                <span id="player-time-current">00:00</span> / <span id="player-time-duration">00:00</span>
+              </span>
+            </div>
+            <div class="actions-right">
+              <div class="quality-selector-container">
+                <button class="control-btn quality-btn" id="player-quality-btn" aria-label="Video Quality">
+                  <span id="quality-label">1080p</span> <i data-lucide="settings" class="settings-gear-icon"></i>
+                </button>
+                <div class="quality-dropdown" id="player-quality-dropdown">
+                  <ul>
+                    <li class="quality-option active" data-quality="1080p">1080p (FHD) <i data-lucide="check" class="check-icon"></i></li>
+                    <li class="quality-option" data-quality="720p">720p (HD) <i data-lucide="check" class="check-icon"></i></li>
+                    <li class="quality-option" data-quality="480p">480p (SD) <i data-lucide="check" class="check-icon"></i></li>
+                    <li class="quality-option" data-quality="auto">Auto <i data-lucide="check" class="check-icon"></i></li>
+                  </ul>
+                </div>
+              </div>
+              <button class="control-btn" id="player-fullscreen-btn" aria-label="Toggle Fullscreen">
+                <i data-lucide="maximize" id="player-fullscreen-icon"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Bottom Navigation Bar -->
+  <nav class="mobile-bottom-nav">
+    <a href="/" class="mobile-nav-item" id="m-nav-home">
+      <i data-lucide="home"></i>
+      <span>Home</span>
+    </a>
+    <a href="#" class="mobile-nav-item" id="m-nav-videos">
+      <i data-lucide="video"></i>
+      <span>Videos</span>
+    </a>
+    <a href="#" class="mobile-nav-item" id="m-nav-live">
+      <div class="live-dot-nav"><span class="nav-dot"></span></div>
+      <span>Live</span>
+    </a>
+    <a href="#" class="mobile-nav-item" id="m-nav-alerts">
+      <i data-lucide="bell"></i>
+      <span>Alerts</span>
+    </a>
+    <a href="#" class="mobile-nav-item" id="m-nav-profile">
+      <i data-lucide="user"></i>
+      <span>Profile</span>
+    </a>
+  </nav>
+
+  <!-- Scripts -->
+  <script type="module" src="./article.js"></script>
+</body>
+</html>
